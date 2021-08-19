@@ -1,0 +1,241 @@
+$dark-blue: #194484
+$medium-blue: #0D6EB7
+$medium-blue2: #276ED8
+$light-blue: #84B5FF
+$dark-green: #06B25F
+$light-green: #66D6A0
+$dark-grey: #242424
+.anycolor
+    background-color: #fff
+%h1-style
+    font-family: Harabara
+    font-style: normal
+    font-weight: bold
+    font-size: 44px
+    line-height: 60px
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    color: #fff
+%p-style
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 26px
+    color: #FFFFFF
+%button-style
+    font-family: Montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 36px
+    Width: 160px
+    Height: 42px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    color: #fff
+    box-sizing: border-box
+    border: 2px solid #fff
+    box-sizing: border-box
+    border-radius: 6px
+    text-decoration: none
+    background: transparent
+    transition: all 300ms ease-in-out
+    &:hover
+        background: $dark-green
+        transition: all 300ms ease-in-out
+%font-style-li
+    font-family: Montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 36px
+    display: flex
+    align-items: center
+    text-transform: uppercase
+    color: #FFFFFF
+
+body
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 26px
+    color: #242424
+.wrapper
+    max-width: 1330px
+    margin: auto
+    padding-left: 15px
+    padding-right: 15px
+
+.top-header
+    background: rgba(33, 33, 33, 0.3)
+    box-shadow: 0px 4px 12px rgba(24, 9, 96, 0.1)
+    width: 100%
+    text-align: center
+    padding-top: 14px
+    padding-bottom: 14px
+    position: fixed
+    top: 0
+    z-index: 1
+    transition: all 200ms ease-in-out
+
+.header-nav
+    margin: 0 auto
+    max-width: 1360px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .logo
+        width: 208px
+        height: 52px
+        background-size: cover
+        background: url(/img/logo.png) no-repeat
+
+.nav ul
+    display: flex
+    align-items: center
+    justify-content: space-between
+    li
+        margin: 0 12px
+        &:nth-child(1) a:after, &:nth-child(2) a:after, &:nth-child(6) a:after
+            content: ''
+            background: url(/img/arrow-down.svg)
+            width: 10px
+            height: 6px
+            margin-left: 5px
+        a
+            @extend %font-style-li
+            text-decoration: none
+            &:hover
+                color: $light-blue
+                transition: all 300ms ease-in-out
+
+.white-button
+    @extend %button-style
+
+.slider-container
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+.slider-content
+    position: relative
+    width: 50%
+    bottom: 80px
+
+    .slide-title
+        @extend %h1-style
+    p
+        @extend %p-style
+        margin-bottom: 40px
+.header-buttons
+    display: flex
+    align-items: center
+    .buttons
+        margin-right: 24px
+        &:last-child a
+            background: $dark-green
+        &:last-child a:hover
+            background: #0b9854
+
+.slider-img
+    img
+        width: 100%
+
+.new
+    background: rgba(255, 255, 255, 0.9)
+    transition: all 200ms ease-in-out
+
+    .logo
+        background: url(/img/logo2.png)
+        width: 208px
+        height: 52px
+        background-size: cover
+
+    .white-button
+        border-color: $dark-green
+        color: $dark-green
+        &:hover
+            background-color: $dark-green
+            color: #fff
+    li a
+        color: $dark-blue !important
+        transition: all 200ms ease-in-out
+
+.slick-dots
+    display: flex
+    justify-content: space-between
+    width: 100px
+    height: 20px
+    li button
+        border: 3px solid #fff
+        border-radius: 100%
+        box-sizing: border-box
+        width: 20px
+        height: 20px
+        font-size: 0
+        background: transparent
+        transition: all 300ms ease-in-out
+        &:hover
+            opacity: 0.9
+            transition: all 300ms ease-in-out
+.slick-active button
+    background: #fff !important
+.technologies
+    text-align: center
+.technologies-img
+    display: flex
+    justify-content: center
+
+.technologies-icon
+    background: #06B25F
+    box-shadow: 0px 4px 12px rgba(41, 24, 111, 0.2)
+    border-radius: 16px
+    width: 64px
+    height: 64px
+    text-align: start
+    margin: 40px
+    &:nth-child(2)
+        background: $medium-blue2
+        img
+            margin-left: 16px
+    &:nth-child(3)
+        background: $light-blue
+        img
+            margin-left: 12px
+    img
+        margin-left: 15px
+        margin-top: 12px
+.title
+    font-family: Harabara
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 39px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #194484
+    margin-bottom: 60px
+.box-title
+    width: 900px
+    margin: 0 auto
+.subtitle
+    font-weight: normal
+    font-size: 24px
+    line-height: 38px
+    color: #242424
+.stan
+    font-weight: bold
+    color: #00A4E8
+.assets
+    font-weight: bold
+    color: $dark-blue
