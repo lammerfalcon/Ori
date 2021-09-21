@@ -192,6 +192,7 @@ body
     background: #fff !important
 .technologies
     text-align: center
+    margin-bottom: 220px
 .technologies-img
     display: flex
     justify-content: center
@@ -239,3 +240,377 @@ body
 .assets
     font-weight: bold
     color: $dark-blue
+    background:
+.reviews
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    background: #FFFFFF
+    box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15)
+    border-radius: 16px
+    max-width: 900px
+    margin: 0 auto
+    margin-bottom: 50px
+.rating
+    display: flex
+    align-items: center
+    font-size: 40px
+    line-height: 0.75
+    .rating-value
+        margin-top: 3px
+        margin-right: 15px
+        font-weight: 600
+        font-size: 18px
+        line-height: 38px
+        text-transform: uppercase
+        color: #242424
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    .rating-body
+        position: relative
+    .rating-body::before
+        content: "★★★★★"
+        display: block
+        color: #E1E1E1
+    .rating-active
+        position: absolute
+        overflow: hidden
+        width: 0%
+        height: 100%
+        top: 0
+        left: 0
+    .rating-active::before
+        content: "★★★★★"
+        position: absolute
+        display: block
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        color: $dark-green
+    .rating-items
+        display: flex
+        position: absolute
+        width: 166px
+        height: 100%
+        top: 0
+        left: 0
+    .rating-item
+        flex: 0 0 20%
+        height: 100%
+        opacity: 0
+.reviews-count
+    font-size: 16px
+    line-height: 26px
+    color: $dark-grey
+    margin-left: 15px
+
+.check-out-button
+    .white-button
+        background: $dark-green
+        width: auto
+        padding: 0 13px
+.services
+    text-align: center
+    margin-bottom: 23px
+.container
+    margin: 0 auto
+    flex-wrap: wrap
+    display: flex
+    max-width: 1130px
+    .service-item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 90%
+        margin-bottom: 41px
+        &:nth-child(even)
+            flex-direction: row-reverse
+        .service-text
+            text-align: left
+            width: 45%
+            p
+                @extend %p-style
+                color: $dark-grey
+            h3
+                font-family: Harabara
+                font-style: normal
+                font-weight: bold
+                font-size: 24px
+                line-height: 38px
+                letter-spacing: 0.05em
+                text-transform: uppercase
+                color: $medium-blue
+                margin-bottom: 4px
+        .service-svg
+            width: 45%
+.partner
+    text-align: center
+    background: url(/img/partner-bg.png) center center no-repeat
+    height: 700px
+    background-size: 100%
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+    .link
+        display: flex
+        justify-content: center
+    .white-button
+        color: $dark-green
+        border-color: $dark-green
+        background-color: #fff
+        &:hover
+            transition: 300ms all ease-in-out
+            background-color: $dark-green
+            color: #fff
+.partner-container
+    margin: 0 auto
+    padding-bottom: 80px
+    .title
+        color: #fff
+        margin-bottom: 16px
+    .subtitle
+        color: #fff
+        margin-bottom: 36px
+.achievements
+    text-align: center
+.achive-list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 400px
+    max-width: 1360px
+    margin: 0 auto
+    margin-bottom: 130px
+    .achive-item
+        width: calc( 25% - 25px )
+        background-color: rgba(47, 156, 330, 0.05)
+        border-radius: 16px
+        height: 100%
+        display: flex
+        align-items: end
+        justify-content: center
+        box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15)
+    .a1
+        background: url(/img/achive_bg1.svg) center center no-repeat
+        background-color: rgba(47, 156, 330, 0.05)
+    .a2
+        background: url(/img/achive_bg2.svg) center center no-repeat
+        background-color: rgba(47, 156, 330, 0.05)
+    .a3
+        background: url(/img/achive_bg3.svg) top center no-repeat
+        background-position-y: 40px
+        background-color: rgba(47, 156, 330, 0.05)
+    .a4
+        background: url(/img/achive_bg4.svg) center center no-repeat
+        background-color: rgba(47, 156, 330, 0.05)
+    .achive-text
+        font-family: Montserrat
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 26px
+        color: $dark-grey
+        margin: 270px 24px 24px 24px
+        max-width: 280px
+        p
+            height: 100px
+        span
+            color: $medium-blue2
+            font-weight: bold
+.partners
+    text-align: center
+    background: url(/img/partner_bg.png) center center no-repeat
+    background-size: 100% 100%
+    height: 1420px
+
+    .title
+        padding-top: 250px
+
+    .partner-list
+        max-width: 1360px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin: 0 auto
+        .partner-item
+            width: 322px
+            height: 160px
+            background: #FFFFFF
+            box-shadow: 0px 3px 16px 4px rgba(29, 51, 107, 0.1)
+            border-radius: 16px
+            margin-bottom: 40px
+            display: flex
+            align-items: center
+            justify-content: space-evenly
+
+.contacts
+    text-align: center
+    .subtitle
+        font-family: Montserrat
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 29px
+        text-align: center
+        color: #242424
+        margin-bottom: 20px
+    h5
+        margin-bottom: 110px
+.contacts-section
+    margin: 0 auto
+    max-width: 1360px
+    display: flex
+    justify-content: space-around
+    margin-bottom: 170px
+.contacts-right
+    width: 40%
+    position: relative
+.contacts-left
+    width: 40%
+.contact-item
+    display: flex
+    align-items: center
+    margin-bottom: 24px
+    p
+        margin-left: 16px
+.form
+    display: flex
+    flex-direction: column
+.contact-form
+    position: relative
+    margin: 0 auto
+    width: 70%
+    padding: 50px 40px 0 40px
+    background: #FFFFFF
+    box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15)
+    border-radius: 6px
+    .button
+        margin-top: 10px
+        margin-bottom: 70px
+        background: $dark-green
+        width: 100%
+        &:hover
+            background: $light-green
+        &:focus
+            background: $dark-blue
+    .form-input
+        background: #FFFFFF
+        border: 2px solid #D7D7D7
+        box-sizing: border-box
+        border-radius: 4px
+        padding: 10px 0 10px 15px
+        margin-bottom: 20px
+        transition: all 300ms ease-in-out
+        &:focus
+            border-color: $dark-green
+    textarea
+        outline: none
+        resize: none
+.animate-1
+    animation: 3s ease-in-out 1s infinite alternate ani1
+    @keyframes ani1
+        to
+            margin-left: -15%
+            margin-top: -15%
+.animate-2
+    animation: 3s ease-in-out 1s infinite alternate ani2
+    @keyframes ani2
+        to
+            margin-right: -15%
+            margin-top: -15%
+.animate-3
+
+    animation: 3s ease-in-out 1s infinite alternate ani3
+    @keyframes ani3
+        to
+            margin-left: -15%
+            margin-bottom: -15%
+
+.ani1
+
+    position: absolute
+    top: -35px
+    left: -35px
+
+.ani2
+    position: absolute
+    right: -35px
+    top: -35px
+.ani3
+    position: absolute
+    bottom: -35px
+    left: -35px
+.footer-logo
+    margin-bottom: 25px
+.footer-socials
+    text-align: center
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    a
+        text-align: start
+        width: calc( 33% - 25px )
+        margin-right: 15px
+        margin-bottom: 25px
+
+    svg
+        fill: #fff
+        transition: all 300ms ease-in-out
+    svg:hover
+        fill: $light-green
+        transition: all 300ms ease-in-out
+
+footer
+    background: url(/img/footer-bg.png) center center no-repeat
+    background-size: 100% 100%
+    height: 700px
+
+    .footer-block
+        margin-top: 350px
+    ul
+        li
+            margin-bottom: 3px
+    .footer-logo
+    a
+        font-size: 13px
+        line-height: 13px
+        letter-spacing: 0.07em
+        color: #FFFFFF
+        &:hover
+            text-decoration: underline
+
+    .footer-title
+        font-family: Harabara
+        font-style: normal
+        font-weight: bold
+        font-size: 15px
+        line-height: 15px
+        letter-spacing: 0.07em
+        color: #FFFFFF
+        margin-bottom: 20px
+        .title-href
+            font-family: Harabara
+            font-style: normal
+            font-weight: bold
+            font-size: 15px
+            line-height: 15px
+            letter-spacing: 0.07em
+            color: #FFFFFF
+
+    .container
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        margin: 0 auto
+a
+    text-decoration: none
+
+.footer-line-item
+    width: 15%
+    margin: 20px 0
+    &:nth-child(1)
+        width: 70%
+    a
+        color: $dark-grey
+        

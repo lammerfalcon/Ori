@@ -1,3 +1,9 @@
+"use strict"
+
+
+
+
+
 $(document).ready(function () {
 
     $('.slider-list').slick({
@@ -10,5 +16,5 @@ $(document).ready(function () {
     $(window).on("scroll", function () {
         $('.top-header').toggleClass("new", $(this).scrollTop() > 100);
     });
-    
+
 });
