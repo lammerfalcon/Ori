@@ -53,7 +53,7 @@ function initRatings() {
                 //обновление активных звезд
                 setRatingActiveWidth();
             });
-            ratingItem.addEventListener('click', function  (e) {
+            ratingItem.addEventListener('click', function (e) {
                 initRatingVars(rating);
 
                 if (rating.dataset.ajax) {
@@ -64,7 +64,7 @@ function initRatings() {
                     ratingValue.innerHTML = index + 1;
                     setRatingActiveWidth();
                 }
-                
+
             })
 
         }

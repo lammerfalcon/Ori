@@ -103,7 +103,7 @@ body {
   width: 208px;
   height: 52px;
   background-size: cover;
-  background: url(/img/logo.png) no-repeat;
+  background: url(../img/logo.png) no-repeat;
 }
 
 .nav ul {
@@ -118,7 +118,7 @@ body {
 
 .nav ul li:nth-child(1) a:after, .nav ul li:nth-child(2) a:after, .nav ul li:nth-child(6) a:after {
   content: '';
-  background: url(/img/arrow-down.svg);
+  background: url(../img/arrow-down.svg);
   width: 10px;
   height: 6px;
   margin-left: 5px;
@@ -183,7 +183,7 @@ body {
 }
 
 .new .logo {
-  background: url(/img/logo2.png);
+  background: url(../img/logo2.png);
   width: 208px;
   height: 52px;
   background-size: cover;
@@ -445,7 +445,7 @@ body {
 
 .partner {
   text-align: center;
-  background: url(/img/partner-bg.png) center center no-repeat;
+  background: url(../img/partner-bg.png) center center no-repeat;
   height: 700px;
   background-size: 100%;
   display: flex;
@@ -511,23 +511,23 @@ body {
 }
 
 .achive-list .a1 {
-  background: url(/img/achive_bg1.svg) center center no-repeat;
+  background: url(../img/achive_bg1.svg) center center no-repeat;
   background-color: rgba(47, 156, 255, 0.05);
 }
 
 .achive-list .a2 {
-  background: url(/img/achive_bg2.svg) center center no-repeat;
+  background: url(../img/achive_bg2.svg) center center no-repeat;
   background-color: rgba(47, 156, 255, 0.05);
 }
 
 .achive-list .a3 {
-  background: url(/img/achive_bg3.svg) top center no-repeat;
+  background: url(../img/achive_bg3.svg) top center no-repeat;
   background-position-y: 40px;
   background-color: rgba(47, 156, 255, 0.05);
 }
 
 .achive-list .a4 {
-  background: url(/img/achive_bg4.svg) center center no-repeat;
+  background: url(../img/achive_bg4.svg) center center no-repeat;
   background-color: rgba(47, 156, 255, 0.05);
 }
 
@@ -553,7 +553,7 @@ body {
 
 .partners {
   text-align: center;
-  background: url(/img/partner_bg.png) center center no-repeat;
+  background: url(../img/partner_bg.png) center center no-repeat;
   background-size: 100% 100%;
   height: 1420px;
 }
@@ -757,7 +757,7 @@ body {
 }
 
 footer {
-  background: url(/img/footer-bg.png) center center no-repeat;
+  background: url(../img/footer-bg.png) center center no-repeat;
   background-size: 100% 100%;
   height: 700px;
 }
